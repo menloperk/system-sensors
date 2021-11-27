@@ -166,7 +166,7 @@ def get_wifi_ssid():
                                   [
                                       'bash',
                                       '-c',
-                                      '/usr/sbin/iwgetid -r',
+                                      '/sbin/iwgetid -r',
                                   ]
                               ).decode('utf-8').rstrip()
     except subprocess.CalledProcessError:
